@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Apps In Myanmar</title>
+
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/5.4.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/5.4.1/firebase-auth.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-database.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src="/__/firebase/init.js"></script>
+	
+	
+	<!-- For Material Design Lite -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-cyan.min.css" /> 
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+	<!--For materialize css CDN language markup -->
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>	
+	
+  </head>
+  <body>
+	<!-- For Layout with fixed header -->    
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+		  <!-- Title -->
+		  <span class="mdl-layout-title">Apps In Myanmar</span>
+		  <!-- Add spacer, to align navigation to the right -->
+		  <div class="mdl-layout-spacer"></div>
+		  <!-- Navigation. We hide it in small screens. -->
+		  <nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+					<a class="mdl-navigation__link" href="topapps.html">Top Apps</a>
+					<a class="mdl-navigation__link" href="latestapps.html">Latest Apps</a>
+					<a class="mdl-navigation__link" href="publishers.html">Publishers</a>
+					<a class="mdl-navigation__link" href="search.html">Search</a>
+					<a class="mdl-navigation__link" href="admin.html">Admin</a>
+					<a class="mdl-navigation__link" href="login.html">Login</a>
+		  </nav>
+		</div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Apps In Myanmar</span>
+		<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+					<a class="mdl-navigation__link" href="topapps.html">Top Apps</a>
+					<a class="mdl-navigation__link" href="latestapps.html">Latest Apps</a>
+					<a class="mdl-navigation__link" href="publishers.html">Publishers</a>
+					<a class="mdl-navigation__link" href="search.html">Search</a>
+					<a class="mdl-navigation__link" href="admin.html">Admin</a>
+					<a class="mdl-navigation__link" href="login.html">Login</a>
+		</nav>
+	  </div>
+	  <main class="mdl-layout__content">
+		<div class="page-content">
+		<!-- Your content goes here -->
+
+		  <!-- For Topapps Data-->
+		  <ul class="collection">
+			<li class="collection-item avatar">
+				
+			<a href="https://play.google.com/store/apps/details?id=com.cbbank.mobilebanking"><img src="images/cb.jpg" alt="" class="circle"></a>
+			<a href="https://play.google.com/store/apps/details?id=com.cbbank.mobilebanking"><span class="title">CB Bank Mobile Banking</span></a>
+			  <p>CB Bank Finance 8_June_15<br>
+				 CB Bank Mobile Banking is a complete mobile banking service available on all mobile phone networks Customers only need to download onto their respective mobile phones and then they can register via nearest CB Bank's Branches in order to connect their accounts with the chosen mobile number in order to use the service. By doing so, customers can easily and safely complete their financial transactions anywhere.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			<li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=ninja.thiha.frozenkeyboard2"><img src="images/fk.jpg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=ninja.thiha.frozenkeyboard2"><span class="title">Frozen Myanmar Keyboard</span></a>
+			  <p>Myanmar Keyboard Developers <br>
+			   Frozen Myanmar Keyboard is a very simple and easy-to-use Zawgyi Myanmar Keyboard application which can be used on Andriod Version 4.0 and higher. It is easily accessible for operation, support both Myanmar (Zawgyi) and English Language input methods without requiring to visit phone settings menu. New amazing features in new version are world up edition Emoij, new Theme and Keyboard adjustment.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			<li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.shwebook.pro"><img src="images/shwe.jpg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.shwebook.pro"><span class="title">Shwebook Dictionary Pro</span></a>
+			  <p>Ko Kyaw Kyaw <br>
+				 Shwebook dictionary pro is the first application that translate from Burmese to English and English Myanmar Translator. It is forever free for use and have more than 50,000 offline definitions for English to Myanmar and Chinese words. You can define or add your definition to Shwebook Dictionary as well. It is compatible with Andriod version 2.1 and above.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			<li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.falakplatinumnew.dialer"><img src="images/beetalk.jpeg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.falakplatinumnew.dialer"><span class="title">BeeTalk</span></a>
+			  <p>BeeTalk Myanmar 27_Mar_17 <br>
+				 Best chatting application with lots of fun features: Look Around Flip, Whisper, Shake Doodle, Stickers, Free Call, Voice Chat, Group Chat Group Vote, Initial release date: 2013.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.mmas.mmas"><img src="images/mmb.jpeg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.mmas.mmas"><span class="title">Myanmar Mobile Application</span></a>
+			  <p>Myanmar Link Updated June 18, 2018 <br>
+				Myanmar Mobile App offers the latest in Mobile Phone news, review & tutorials. It is a leading technology web publication focused on iOs, Andriod & all things about mobile technology in Myanmar. Our audiance is educated and affluent. They know iOs, Andriod and mobile technology. 
+				 
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.codemindz.mayanmar.keyboard"><img src="images/myanmarkey.jpeg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.codemindz.mayanmar.keyboard"><span class="title">Myanmar Keyboard</span></a>
+			  <p>Abbott Cullen   <br>
+				Myanmar keyboard is a Myanmar font style keyboard apply in your phone keyboard with any kind of messages to use Myanmar characters. It applies in your whole phone keyboard images and works like a Myanmar font in keyboard. You can also to change the background photo at any time. User can apply your photo in keyboard with any size.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			<li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=org.firstmm.freebrowser"><img src="images/fmm.jpeg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=org.firstmm.freebrowser"><span class="title">Free Myanmar Browser</span></a>
+			  <p>Htin Aung 6_Apr_15 <br>
+				 Free Myanmar Browser is Burmese fonts (Myanmar Unicode Zawgyi_One & Wininnwa) supported andriod browser for Andriod 4 and above based on an open-source tint browser.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/search?q=Yangon+Train&c=apps"><img src="images/ygnt.jpeg" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/search?q=Yangon+Train&c=apps"><span class="title">Yangon Train</span></a>
+			  <p>Saw Ye Maw Updated 26-Jul-15   <br>
+				Features : Easy routing search including travelling time and next trains arrival times, trains list and search, stations list and search, Yangon trains stations map and user's location, and Myanmar & English languages support.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.mmswdev.chinesevocab.hsk.mm"><img src="images/Chinese Vocabulary for Myanmar.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.mmswdev.chinesevocab.hsk.mm"><span class="title">Chinese Vocabulary for Myanmar</span></a>
+			  <p>MM Software Development Updated March 31, 2017   <br>For those learning or brushing up their Mandarin Chinese, this app can be used to learn vocabularies. The vocabularies are grouped into six levels based on Hànyǔ Shuǐpíng Kǎoshì 汉语水平考试 (the official Chinese proficiency test). The Hànyǔ Shuǐpíng Kǎoshì is standardized by China where simplified Chinese characters are mainly used.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>	
+
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.ebzits.learningkoreanbasiclite"><img src="images/Basic Korean Speaking.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.ebzits.learningkoreanbasiclite"><span class="title">Basic Korean Speaking</span></a>
+			  <p>Thein Updated July 17,2018   <br>Korean language is very systematic and we bring each component to be able to learn easily and effectively. The App provided the sound of each alphabet and take you to learn related vocabularies with the sound as well.After leaning the alphabet components, writing style, phonetic, suffix words then learn spoken Korean sentences with which you can use in everyday lives.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.naing.englishmyanmardictionary"><img src="images/English MyanmarDictionary.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.naing.englishmyanmardictionary"><span class="title">English MyanmarDictionary</span></a>
+			  <p>NAING GROUP Updated July 28, 2018   <br>English to Myanmar or Myanmar to English Offline Dictionary.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.naing.screencracker"><img src="images/MMBook.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.naing.screencracker"><span class="title">MMBook</span></a>
+			  <p>NAING GROUP Updated July 6, 2018  <br>MM Bookshelf is collection of myanmar books for all myanmar people around the world.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			 <li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.shweapps.MyanmaraccMeditation"><img src="images/Myanmar Mediation.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.shweapps.MyanmaraccMeditation"><span class="title">Myanmar Mediation</span></a>
+			  <p>Shwe Apps Updated February 23, 2018   <br>Myanmar Mediation Apps is a collection of great meditation methods from various sayardawgyi for our Myanmar People
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+			<li class="collection-item avatar">
+			   <a href="https://play.google.com/store/apps/details?id=com.myanmaridol.android"><img src="images/Myanmar National TV - Myanmar Idol.png" alt="" class="circle"></a>
+			  <a href="https://play.google.com/store/apps/details?id=com.myanmaridol.android"><span class="title">Myanmar National TV - Myanmar Idol</span></a>
+			  <p>Myanmar Idol Updated August 9, 2018   <br>Myanmar National TV is online and presents Myanmar’s #1 Show, Myanmar Idol for viewers through this application. Stay updated with the latest performances and vote for your favourite contestants using the official Myanmar Idol App.
+			  </p>
+			  <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+			</li>
+		  </ul>
+		  
+		  <!-- For Footer -->
+		  <footer class="mdl-mega-footer">
+		  <div class="mdl-mega-footer__middle-section">
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Features</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Partners</a></li>
+				<li><a href="#">Updates</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Details</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="#">Specs</a></li>
+				<li><a href="#">Tools</a></li>
+				<li><a href="#">Resources</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Technology</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="works.html">How it works</a></li>
+				<li><a href="#">Patterns</a></li>
+				<li><a href="#">Usage</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contracts</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">FAQ</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="question.html">Questions</a></li>
+				<li><a href="answer.html">Answers</a></li>
+				<li><a href="#">Contact us</a></li>
+			  </ul>
+			</div>
+
+		   <div class="mdl-mega-footer__bottom-section">
+			<div class="mdl-logo">Apps in Myanmar</div>
+			<ul class="mdl-mega-footer__link-list">
+			  <li><a href="#">Help</a></li>
+			  <li><a href="#">Privacy & Terms</a></li>
+			</ul>
+		   </div>
+
+		  </footer>           		
+		
+		</div>
+	  </main>
+	</div>
+	
+	
+  </body>
+</html>

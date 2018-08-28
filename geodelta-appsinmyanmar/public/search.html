@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Apps In Myanmar</title>
+
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/5.4.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/5.4.1/firebase-auth.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-database.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-messaging.js"></script>
+    <script src="/__/firebase/5.4.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script src="/__/firebase/init.js"></script>
+	
+	
+	<!-- For Material Design Lite -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-cyan.min.css" /> 
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	
+	<!--For materialize css CDN language markup -->
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>	
+	
+  </head>
+  <body>
+	<!-- For Layout with fixed header -->    
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+		<div class="mdl-layout__header-row">
+		  <!-- Title -->
+		  <span class="mdl-layout-title">Apps In Myanmar</span>
+		  <!-- Add spacer, to align navigation to the right -->
+		  <div class="mdl-layout-spacer"></div>
+		  <!-- Navigation. We hide it in small screens. -->
+		  <nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+					<a class="mdl-navigation__link" href="topapps.html">Top Apps</a>
+					<a class="mdl-navigation__link" href="latestapps.html">Latest Apps</a>
+					<a class="mdl-navigation__link" href="publishers.html">Publishers</a>
+					<a class="mdl-navigation__link" href="search.html">Search</a>
+					<a class="mdl-navigation__link" href="admin.html">Admin</a>
+					<a class="mdl-navigation__link" href="login.html">Login</a>
+		  </nav>
+		</div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+		<span class="mdl-layout-title">Apps In Myanmar</span>
+		<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="index.html">Home</a>
+					<a class="mdl-navigation__link" href="topapps.html">Top Apps</a>
+					<a class="mdl-navigation__link" href="latestapps.html">Latest Apps</a>
+					<a class="mdl-navigation__link" href="publishers.html">Publishers</a>
+					<a class="mdl-navigation__link" href="search.html">Search</a>
+					<a class="mdl-navigation__link" href="admin.html">Admin</a>
+					<a class="mdl-navigation__link" href="login.html">Login</a>
+		</nav>
+	  </div>
+	  <main class="mdl-layout__content">
+		<div class="page-content">
+		<!-- Your content goes here -->
+		
+		<form action="#">
+		  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			<input class="mdl-textfield__input" type="text" id="appName">
+			<label class="mdl-textfield__label" for="appName">App Name...</label>
+		  </div>
+		</form>
+		
+		<!-- Accent-colored raised button with ripple -->
+		<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="internApp.Read()">
+		  Search
+		</button>
+
+		<ul class="demo-list-three mdl-list" data-bind="foreach: interns">
+		  <li class="mdl-list__item mdl-list__item--three-line">
+			<span class="mdl-list__item-primary-content">
+			  <i class="material-icons mdl-list__item-avatar">person</i>
+			  <span data-bind="text: name">Intern Name</span>
+			  <span class="mdl-list__item-text-body">
+					Student ID: <span data-bind="text: internID"> #StudentID </span> Team: <span data-bind="text: team"> #Team </span> Project: <span data-bind="text: project"> #Project </span>
+			  </span>
+			</span>
+			<span class="mdl-list__item-secondary-content">
+			  <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+			</span>
+		  </li>
+		</ul>		
+		  
+		  <!-- For Footer -->
+		  <footer class="mdl-mega-footer">
+		  <div class="mdl-mega-footer__middle-section">
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Features</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Partners</a></li>
+				<li><a href="#">Updates</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Details</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="#">Specs</a></li>
+				<li><a href="#">Tools</a></li>
+				<li><a href="#">Resources</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">Technology</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="works.html">How it works</a></li>
+				<li><a href="#">Patterns</a></li>
+				<li><a href="#">Usage</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Contracts</a></li>
+			  </ul>
+			</div>
+
+			<div class="mdl-mega-footer__drop-down-section">
+			  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+			  <h1 class="mdl-mega-footer__heading">FAQ</h1>
+			  <ul class="mdl-mega-footer__link-list">
+				<li><a href="question.html">Questions</a></li>
+				<li><a href="answer.html">Answers</a></li>
+				<li><a href="#">Contact us</a></li>
+			  </ul>
+			</div>
+
+		   <div class="mdl-mega-footer__bottom-section">
+			<div class="mdl-logo">Apps in Myanmar</div>
+			<ul class="mdl-mega-footer__link-list">
+			  <li><a href="#">Help</a></li>
+			  <li><a href="#">Privacy & Terms</a></li>
+			</ul>
+		   </div>
+
+		  </footer>           		
+		
+		</div>
+	  </main>
+	</div>
+	
+	
+  </body>
+</html>
